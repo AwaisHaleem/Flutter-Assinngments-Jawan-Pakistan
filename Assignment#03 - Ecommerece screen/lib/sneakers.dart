@@ -11,15 +11,19 @@ class _ShoesState extends State<Shoes> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
+          centerTitle: true,
+          leading: Icon(
+            Icons.arrow_back_ios_outlined,
+            color: Colors.black45,
+          ),
           backgroundColor: Colors.grey[200],
-          title: Center(
-              child: Text(
+          title: Text(
             'Sneakers',
             style: TextStyle(
                 color: Colors.black45,
                 fontSize: 25,
                 fontWeight: FontWeight.bold),
-          ))),
+          )),
       body: SingleChildScrollView(
         child: Column(
           children: [
